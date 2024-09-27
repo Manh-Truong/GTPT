@@ -103,7 +103,7 @@ INSERT INTO `motel` (`Motel_Id`, `title`, `description`, `price`, `area`, `count
 (38, 'Phong tro ', '<p>Phong rong rai, thoang mat</p>\r\n', 980000, 10000, 3, 'Ha Noi', '', 'cao cấp.jpg', 'Sạch, sang', '2021-12-22 22:26:40', '0986837846', 0, 2, 35, 4, 1),
 (47, 'Phòng trọ cao cấp', 'Sạch đẹp, rộng rãi', 2000000, 30050, 2, 'Hồ Chí Minh', '', 'cao cấp.jpg', 'Có đầy đủ vật dụng', '2021-12-24 19:03:39', '0976534726', 0, 0, 35, 1, 1),
 (48, 'Phòng trọ ở ghép', '<p>Sạch sẽ</p>\r\n', 1000000, 10000, 3, 'Huế', '', 'mini.jpg', 'Sạch sẽ, an toàn', '2021-12-25 01:09:02', '0375642367', 1, 1, 35, 1, 1),
-(49, 'Cho thuê phòng trọ chính chủ, an ninh, thang máy, bảo vệ 24/24', '<p>***** PHÒNG TRỌ 1071 HUỲNH TẤN PHÁT, Q7, gần ĐH Tôn Đức Thắng.</p>\r\n\r\n<p>- Phòng trọ nằm trên trục đường chính số 1071 Huỳnh Tấn Phát, Phú Thuận, Q 7. Đi 5 phút tới Phú Mỹ Hưng, đi 15 phút qua quận 1, gần trường ĐH Tôn Đức Thắng.</p>\r\n\r\n<p>- Phòng có CỬA SỔ, nhiều phòng có BAN CÔNG, đảm bảo ánh sáng ban ngày không cần mở đèn.</p>\r\n\r\n<p>- Toilet trong phòng, có BẾP nấu ăn. </p>\r\n\r\n<p>- Trong nhà có Thang máy đi lại.</p>\r\n\r\n<p>- Internet 4 đường truyền cáp quang mạnh, nhanh. Cáp Tivi.</p>\r\n\r\n<p>- Khóa vân tay khách về tự do.</p>\r\n\r\n<p>- Phòng cháy chữa cháy tự động, sân phơi quần áo.</p>\r\n\r\n<p>- Bỏ xe dưới tầng trệt, có bảo vệ trong coi, Có Camera an ninh quan sát.</p>\r\n\r\n<p>- Bảo vệ trong coi 24/24 giúp Bạn có cảm giác an toàn, được bảo vệ.</p>\r\n\r\n<p>- Có dịch vụ lau dọn hành lang hàng tuần sạch sẽ.</p>\r\n\r\n<p>- Có hổ trợ sửa chữa điện, nước…cơ bản giúp bạn an tâm sinh sống.</p>\r\n', 2500000, 25, 5, '1071 Huỳnh Tấn Phát, Phú Thuận, Quận 7, Tp. Hồ Chí Minh', '', 'Nhà cao cấp mini.jpg', 'Có đầy đủ vật dụng tiện nghi, an toàn', '2021-12-25 01:10:16', '0918180057 ', 0, 2, 35, 1, 1);
+(49, 'Cho thuê phòng trọ chính chủ', '<p>***** PHÒNG TRỌ 1071 HUỲNH TẤN PHÁT, Q7, gần ĐH Tôn Đức Thắng.</p>\r\n\r\n<p>- Phòng trọ nằm trên trục đường chính số 1071 Huỳnh Tấn Phát, Phú Thuận, Q 7. Đi 5 phút tới Phú Mỹ Hưng, đi 15 phút qua quận 1, gần trường ĐH Tôn Đức Thắng.</p>\r\n\r\n<p>- Phòng có CỬA SỔ, nhiều phòng có BAN CÔNG, đảm bảo ánh sáng ban ngày không cần mở đèn.</p>\r\n\r\n<p>- Toilet trong phòng, có BẾP nấu ăn. </p>\r\n\r\n<p>- Trong nhà có Thang máy đi lại.</p>\r\n\r\n<p>- Internet 4 đường truyền cáp quang mạnh, nhanh. Cáp Tivi.</p>\r\n\r\n<p>- Khóa vân tay khách về tự do.</p>\r\n\r\n<p>- Phòng cháy chữa cháy tự động, sân phơi quần áo.</p>\r\n\r\n<p>- Bỏ xe dưới tầng trệt, có bảo vệ trong coi, Có Camera an ninh quan sát.</p>\r\n\r\n<p>- Bảo vệ trong coi 24/24 giúp Bạn có cảm giác an toàn, được bảo vệ.</p>\r\n\r\n<p>- Có dịch vụ lau dọn hành lang hàng tuần sạch sẽ.</p>\r\n\r\n<p>- Có hổ trợ sửa chữa điện, nước…cơ bản giúp bạn an tâm sinh sống.</p>\r\n', 2500000, 25, 5, Hồ Chí Minh', '', 'Nhà cao cấp mini.jpg', 'Có đầy đủ vật dụng tiện nghi, an toàn', '2021-12-25 01:10:16', '0918180057 ', 0, 2, 35, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -127,11 +127,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `Name`, `Username`, `Email`, `Password`, `Role`, `Phone`, `Avatar`) VALUES
-(30, 'Linh', 'linh', 'linh7684@gmail.com', '115dd41ed0cde9bd1a54404fe9c4c13d', '1', '0978376294', 'Chung cư mini.jpg'),
-(35, 'Ngọc', 'ngoc99', 'ngoc99@gmail.com', '1234567', '1', '0967239321', '17874166.jpg'),
-(42, 'Thảo Nguyên', 'thaonguyen8757', 'thaonguyen9876@gmail.com', '789', '0', '0967239729', 'ảnh 1.png'),
-(43, 'Khánh Ngọc', 'khanhngoc2020', 'khanhngoc2020@gmail.com', 'e9f11cb3aa86d8325ae442fb18d803c7', '', '0967239700', 'ảnh 3.jpg'),
-(44, 'Hải Phong', 'haiphong', 'haiphong@gmail.com', '-Hai6795phong78', '1', '0967239657', 'ảnh 5.jpg'),
+(30, 'Hà Huy Sơn', 'son', 'son@gmail.com', '1234567', '1', '0978376294', 'Chung cư mini.jpg'),
+(35, 'Trương Huy Mạnh', 'manh', 'manh@gmail.com', '1234567', '1', '0967239321', '17874166.jpg'),
+(42, 'Nguyễn Đức Ngọc', 'ducngoc', 'ducngoc@gmail.com', '789', '0', '0967239729', 'ảnh 1.png'),
+(43, 'Trần Trung Kiên', 'kien', 'kien@gmail.com', 'e9f11cb3aa86d8325ae442fb18d803c7', '', '0967239700', 'ảnh 3.jpg'),
+(44, 'Nguyễn Văn Ngọc', 'vanngoc', 'vanngoc@gmail.com', '-vanngoc@123-', '1', '0967239657', 'ảnh 5.jpg'),
 (45, 'Hùng Dũng', 'hungdung95', 'hungdung95@gmail.com', '1234', '1', '0967239791', 'ảnh 4.jpg');
 
 --

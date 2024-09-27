@@ -1,0 +1,255 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.header {
+  background-color: #fc8415;
+  color: white; }
+  .header .menu {
+    padding-left: 0;
+    align-items: center;
+    justify-content: center; }
+    .header .menu_item {
+      text-align: center;
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      list-style-type: none; }
+      .header .menu_item a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase; }
+    .header .menu .menu_item:hover {
+      background-color: #f7a841; }
+      .header .menu .menu_item:hover a {
+        color: black; }
+    .header .menu .user {
+      padding: 0px 10px;
+      position: relative;
+      width: 200px;
+      height: 40px; }
+      .header .menu .user .avata img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover; }
+      .header .menu .user a {
+        line-height: 40px;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase; }
+    .header .menu .user:hover {
+      background-color: #f7a841; }
+      .header .menu .user:hover a {
+        color: black; }
+      .header .menu .user:hover .sub {
+        z-index: 9999;
+        opacity: 1;
+        top: 100%;
+        visibility: visible; }
+
+.sub {
+  background-color: #fc8415;
+  position: absolute;
+  opacity: 0;
+  top: 140%;
+  width: 100%;
+  left: 0;
+  visibility: hidden;
+  transition: 0.5s; }
+  .sub_item {
+    width: 100%;
+    padding: 0 10px;
+    cursor: pointer; }
+  .sub .sub_item:hover {
+    width: 100%;
+    background-color: yellowgreen; }
+
+.site {
+  position: relative; }
+  .site .addtro {
+    z-index: 99;
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    visibility: hidden;
+    opacity: 0; }
+    .site .addtro_active {
+      margin: auto;
+      width: 600px;
+      background-color: #fc8415;
+      padding: 20px 15px; }
+      .site .addtro_active h1 {
+        text-align: center; }
+      .site .addtro_active .form_input input {
+        width: 100%;
+        height: 35px;
+        padding: 5px;
+        margin-bottom: 5px; }
+      .site .addtro_active .form_input button {
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 40px;
+        border: none;
+        line-height: 35px;
+        text-decoration: none;
+        margin-top: 20px; }
+      .site .addtro_active .form_input button:hover {
+        background-color: green;
+        color: white; }
+      .site .addtro_active .form_input textarea {
+        width: 100%;
+        padding: 10px; }
+      .site .addtro_active .form_input select {
+        margin-bottom: 10px !important;
+        width: 100%; }
+  .site .edit_infos {
+    z-index: 99;
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    visibility: hidden;
+    opacity: 0; }
+    .site .edit_infos_active {
+      margin: auto;
+      width: 600px;
+      background-color: #fc8415;
+      padding: 20px 15px; }
+      .site .edit_infos_active h1 {
+        text-align: center; }
+      .site .edit_infos_active .form_input input {
+        width: 100%;
+        height: 35px;
+        padding: 5px;
+        margin-bottom: 5px; }
+      .site .edit_infos_active .form_input a {
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 40px;
+        border: 1px solid gray;
+        line-height: 35px;
+        text-decoration: none;
+        margin-top: 20px; }
+      .site .edit_infos_active .form_input a:hover {
+        background-color: green;
+        color: white; }
+
+.active {
+  visibility: visible !important;
+  opacity: 1 !important;
+  top: 100%; }
+
+.motel {
+  margin-top: 20px; }
+  .motel a {
+    cursor: pointer; }
+  .motel_left img {
+    object-fit: cover; }
+  .motel_center {
+    margin-left: 15px; }
+    .motel_center_title {
+      font-size: 25px; }
+      .motel_center_title a {
+        text-decoration: none;
+        color: black; }
+    .motel_center_info {
+      margin-bottom: 0;
+      line-height: 28px; }
+      .motel_center_info a {
+        text-decoration: none;
+        color: black; }
+    .motel_center .price {
+      color: red; }
+      .motel_center .price span {
+        font-weight: 600; }
+  .motel_right {
+    margin-left: auto;
+    padding-right: 15px; }
+    .motel_right_info {
+      margin-bottom: 0;
+      line-height: 28px; }
+    .motel_right .time {
+      padding-top: 45px; }
+
+.viewmt_left .title {
+  font-size: 60px;
+  font-weight: 400; }
+.viewmt_left .img_info {
+  margin-bottom: 5px; }
+  .viewmt_left .img_info_view {
+    margin-left: auto; }
+    .viewmt_left .img_info_view .time span {
+      color: red;
+      font-weight: 600; }
+.viewmt_left .img_show img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover; }
+.viewmt_left .description {
+  margin-top: 15px; }
+  .viewmt_left .description_title {
+    font-size: 30px; }
+  .viewmt_left .description_detail {
+    min-height: 150px;
+    border: 1px solid #f7be6a;
+    background: #f7f0ea;
+    padding: 10px; }
+.viewmt_right .tile {
+  line-height: 100px;
+  font-weight: 300;
+  font-size: 25px; }
+.viewmt_right .call {
+  width: 100%;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  height: 40px;
+  margin-bottom: 30px; }
+.viewmt_right .note {
+  margin-bottom: 30px; }
+  .viewmt_right .note .area {
+    margin: auto; }
+.viewmt_right .orther {
+  margin-bottom: 15px; }
+  .viewmt_right .orther span {
+    line-height: 35px; }
+.viewmt_right .report {
+  margin-bottom: 25px;
+  width: 100%; }
+  .viewmt_right .report .fa-check-circle {
+    line-height: 35px;
+    color: #fc8415; }
+  .viewmt_right .report_send {
+    margin-top: 10px;
+    border: none;
+    border: 2px solid red;
+    color: red;
+    background: none;
+    width: 150px; }
+  .viewmt_right .report_send:hover {
+    background-color: sandybrown;
+    color: white;
+    transition: calc(1.05); }
+.viewmt_right .acti {
+  text-align: center;
+  width: 100%; }
+  .viewmt_right .acti .edit_post {
+    width: 150px;
+    height: 35px;
+    border: none;
+    color: #0bca04;
+    border: 2px solid #0bca04;
+    background: none;
+    width: 150px; }
+  .viewmt_right .acti .edit_post:hover {
+    background-color: sandybrown;
+    color: white;
+    transition: calc(1.05); }
+
+/*# sourceMappingURL=home.min.css.map */
